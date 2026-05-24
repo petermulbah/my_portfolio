@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <base href ="/my_portfolio"
+    <link  rel="stylesheet" href ="style.css">
+    <script src="javescript.js" defer></script>>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Peter's Portfolio</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="typing-text" id="typing"></span></h1>
+            <p>Full Stack Developer & UI/UX Designer crafting beautiful digital experiences with modern technologies and building network infrastructure.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="about-image-placeholder"><img src="Peter W. Mulbah.png" alt ="Peter W. Mulbah.jpg" style="height:350px; width: 350px; border: 2px solid white; border-radius: 20px;"></div>
+            </div>
+            <div class="about-text">
+                <h3>Passionate Developer & Designer</h3>
+                <p>I specialize in building modern web applications with clean code and intuitive user interfaces. With expertise in both frontend and backend technologies, I create seamless digital experiences that solve real-world problems.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Network Design</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🛒</div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task manager with real-time updates, drag-and-drop interface, and team analytics.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-info">
+                    <h3>Design System</h3>
+                    <p>Comprehensive component library with accessibility features, theming, and documentation.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-info">
+                    <h3>AI Dashboard</h3>
+                    <p>Analytics dashboard for machine learning models with data visualization and prediction tools.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">💬</div>
+                <div class="project-info">
+                    <h3>Chat Application</h3>
+                    <p>Real-time messaging app with WebSocket, file sharing, end-to-end encryption, and group chats.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3>Finance Tracker</h3>
+                    <p>Personal finance management tool with expense categorization, budgeting, and investment tracking.</p>
+                    <div class="project-links">
+                        <a href="#" onclick="showModal('Live demo coming soon!')">Live Demo →</a>
+                        <a href="#" onclick="showModal('GitHub repo coming soon!')">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+       <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>petermubah900@gmail.com.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+231 (770) 525-094</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Brewerville, Montserrado</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <h4>Availability</h4>
+                        <p>Open for freelance & full-time</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" title="GitHub">GH</a>
+            <a href="#" title="LinkedIn">LI</a>
+            <a href="#" title="Twitter">TW</a>
+            <a href="#" title="Dribbble">DR</a>
+        </div>
+        <p> 2024 Portfolio. Built with passion and coffee.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Notice</h3>
+            <p id="modalText">Message here</p>
+            <button class="modal-close" onclick="closeModal()">Got it!</button>
+        </div>
+    </div>
+
+</body>
+</html>
